@@ -1,5 +1,6 @@
 package com.yobel.rickandmortyback.service;
 
+import com.yobel.rickandmortyback.exception.ResourceNotFoundException;
 import com.yobel.rickandmortyback.model.response.CharacterResponse;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.http.HttpStatus;
