@@ -1,0 +1,22 @@
+server:
+  port: 8080
+  error:
+    include-message: always
+    include-binding-errors: always
+
+spring:
+  application:
+    name: rick-and-morty-back
+  webflux:
+    base-path: /api
+  graphql:
+    cors:
+      allowed-origins: *
+      allowed-methods: GET, POST, PUT, DELETE, OPTIONS
+      allowed-headers: *
+
+logging:
+  level:
+    com.yobel.rickandmortyback: DEBUG
+    org.springframework.web.reactive.function.client.ExchangeFunctions: DEBUG
+
